@@ -1,4 +1,4 @@
-A Digital Portfolio is a personal website that displays an 
+c vA Digital Portfolio is a personal website that displays an 
 
 individual’s skills, education, projects, and achievements in a 
 
