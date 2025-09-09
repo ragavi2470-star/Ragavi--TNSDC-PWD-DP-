@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000; /* Black background */
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #0a0a23;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 2px solid #00aaff;
+    }
+    header h1 {
+      margin: 0;
+      color: #00aaff;
+    }
+    nav a {
+      color: #00aaff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #00aaff;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00aaff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .skills, .education {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00aaff;
+    }
+    footer {
+      background: #0a0a23;
+      text-align: center;
+      padding: 15px;
+      border-top: 2px solid #00aaff;
+      color: #aaa;
+    }
+    /* Contact Form */
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background: #00aaff;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #0077aa;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Showcasing My Skills and Education</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+<img
+ src="https://i.supaimg.com/b5e4a018-1930-4850-b7f0-7c6520e3196d.png"alt="profile icon">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Ragavi</p>
+    <p>BCA Student at government arts college</p>
+     <p>HTML, CSS, and JavaScript 
+    My goal is to create beautiful and user-friendly designs.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>HTML & CSS</h3>
+        <p>Creating responsive, accessible, and modern web pages.</p>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Adding interactivity and functionality to websites.</p>
+      </div>
+      <div class="card">
+        <h3>Python</h3>
+        <p>Data analysis, scripting, and backend development.</p>
+      </div>
+      <div class="card">
+        <h3>SQL</h3>
+        <p>Managing and querying databases efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card">
+        <h3>BCA (Bachelor of Computer Applications)</h3>
+        <p>GGHSS-2022-2024</p>
+      </div>
+      <div class="card">
+        <h3>Higher Secondary</h3>
+        <p>ABC School (2020 - 2022)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed by Me</p>
+  </footer>
+
+  <!-- JavaScript for Form -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.getElementById("formMessage").innerText = "Thank you! Your message has been sent.";
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+
+</body>
+</html>
